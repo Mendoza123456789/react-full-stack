@@ -1,0 +1,91 @@
+.box-form
+{
+
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.box-mb
+{
+
+    width: 50%;
+
+}
+
+.p-mb
+{
+
+    font-size: 30px;
+
+}
+
+.fa-solid
+{
+
+    font-size: 25px;
+    margin-top: 5px;
+
+}
+
+.box-fa-solid
+{
+
+    background-color: rgb(117, 112, 112);
+    border-radius: 2px 0 0 2px;
+    padding: 5px;
+
+}
+
+.form-control
+{
+
+    border-radius: 0 2px 2px 0;
+
+}
+
+.box2
+{
+
+    margin-right: 10px;
+
+}
+
+.box-hecho
+{
+
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+@media (max-width: 768px)
+{
+
+    .box-form
+    {
+    
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    
+    }
+
+    .box-hecho
+    {
+
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+}
+
+@media (max-width: 576px)
+{
+
+
+}

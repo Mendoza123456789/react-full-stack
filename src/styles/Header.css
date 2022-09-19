@@ -1,0 +1,75 @@
+.box-header
+{
+
+    margin-bottom: 5%;
+
+}
+
+.container-fluid
+{
+
+    width: 90%;
+    
+}
+
+.navbar
+{
+
+    background-color: darkgray;
+
+}
+
+.box-link
+{
+
+    margin-left: 60%;
+
+}
+
+.App-logo 
+{
+
+    height: 40px;
+    pointer-events: none;
+
+}
+
+@keyframes App-logo-spin
+{
+    from 
+    {
+    
+        transform: rotate(0deg);
+    
+    }
+    to 
+    {
+    
+        transform: rotate(360deg);
+    
+    }
+}
+
+@media (prefers-reduced-motion: no-preference)
+ {
+    
+    .App-logo
+    {
+    
+        animation: App-logo-spin infinite 20s linear;
+    
+    }
+
+}
+
+@media (max-width: 992px)
+{
+
+    .box-link
+    {
+
+        margin-left: 0;
+
+    }
+
+}

@@ -1,0 +1,48 @@
+.p-link-button
+{
+
+    text-align: center;
+    
+}
+
+.p-register
+{
+
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.btn-link-registro:hover
+{
+
+    background-color: lightgray;
+
+}
+
+.box-card-user
+{
+
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.p-usuario-prueba
+{
+
+    font-weight: bold;
+
+}
+
+.p-button-user,
+.p-user,
+.p-user-icon-hand
+{
+
+    text-align: center;
+
+}
+
+

@@ -1,0 +1,92 @@
+.box-table
+{
+
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.box-btn
+{
+
+    margin-right: 2%;
+
+}
+
+.alert-secondary
+{
+
+    height: 60vh;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.p-alert
+{
+
+    font-size: 30px;
+    text-align: center;
+    margin-top: 5%;
+
+}
+
+.p-alert2
+{
+
+    font-size: 20px;
+    text-align: center;
+
+}
+
+.p-alert-icon,
+.p-alert-button
+{
+
+    text-align: center;
+
+}
+
+.box-button-login
+{
+
+    margin-top: 10%;
+
+}
+
+.card
+{
+
+    margin-bottom: 5%;
+
+}
+
+.p-error
+{
+
+    margin-top: 2%;
+    font-weight: bold;
+
+}
+
+@media (max-width: 576px)
+{
+
+    .alert-secondary
+    {
+
+        height: 50vh;
+        width: 90%;
+
+    }
+
+    .p-alert
+    {
+
+        margin-top: 10%;
+
+    }
+
+}
