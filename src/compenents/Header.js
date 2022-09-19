@@ -14,7 +14,7 @@ export default function Header(props) {
                 <div className="container-fluid">
                 
                         {props.pseudonimo}
-                        <button type="button" className="btn" onClick={ () => navigate('/')}> Angel Mendoza / React </button>
+                        <button type="button" className="btn" onClick={ () => navigate('/')}> AMendoza|React </button>
                         <img src={logo} className="App-logo" alt="logo" />
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>

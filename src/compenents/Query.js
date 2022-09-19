@@ -74,7 +74,6 @@ const Query = () =>{
 
               </p>
 
-
             </div>
 
           </div>
