@@ -77,14 +77,17 @@ export default function Incio() {
               </div>
             </div>
           </div>
+
           <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
             <i className="fa-solid icon-carousel fa-angles-left"></i>
             <span className="visually-hidden">Previous</span>
           </button>
+
           <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
           <i className="fa-solid icon-carousel fa-angles-right"></i>
             <span className="visually-hidden">Next</span>
           </button>
+          
         </div>  
         </div>
 
