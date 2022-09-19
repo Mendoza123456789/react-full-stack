@@ -7,6 +7,7 @@ import Login from './compenents/Login';
 import Registro from './compenents/Registro';
 import Actualizar from './compenents/Actualizar';
 
+
 export default function App(props) {
 
     return (
