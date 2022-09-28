@@ -1,91 +1,184 @@
-.box-form
-{
 
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-
-}
-
-.box-mb
-{
-
-    width: 50%;
-
-}
-
-.p-mb
-{
-
-    font-size: 30px;
-
-}
-
-.fa-solid
-{
-
-    font-size: 25px;
-    margin-top: 5px;
-
-}
-
-.box-fa-solid
-{
-
-    background-color: rgb(117, 112, 112);
-    border-radius: 2px 0 0 2px;
-    padding: 5px;
-
-}
-
-.form-control
-{
-
-    border-radius: 0 2px 2px 0;
-
-}
-
-.box2
-{
-
-    margin-right: 10px;
-
-}
-
-.box-hecho
-{
-
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-
-}
-
-@media (max-width: 768px)
-{
-
-    .box-form
-    {
-    
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
-    
+  @keyframes cloudMove {
+    0% {
+      opacity: 0.5;
+      transform: translateX(110vw);
+      background: linear-gradient(top, #e7f1fa 5%, #9ad6f1 100%);
     }
-
-    .box-hecho
-    {
-
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
-
+  
+    40% {
+      opacity: 0.8;
+      background: linear-gradient(top, #95999e 5%, #47bff7 100%);
     }
+  
+    100% {
+      opacity: 1;
+      background: linear-gradient(top, #848586 5%, #327594 100%);
+      transform: translateX(-100vw);
+    }
+  }
+  
+  @keyframes sun-move {
+    0% {
+      transform: rotate(10deg);
+    }
+  
+    20% {
+      transform: rotate(45deg);
+    }
+  
+    60% {
+      transform: rotate(135deg);
+    }
+  
+    80% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  
+  
+  @keyframes skyAnimation {
+    0% {
+      background-color: #FAF0C9;
+    }
+  
+    25% {
+      background-color: #F9FAC7;
+    }
+  
+    50% {
+      background-color: #FECE82;
+    }
+  
+    75% {
+      background-color: #EB785A;
+    }
+  
+    100% {
+      background-color: #b1688d;
+    }
+  }
+  
+  @keyframes lastMountainAnimation {
+    0% {
+      border-bottom: 40vh solid rgb(71, 106, 223);
+    }
+  
+    100% {
+      border-bottom: 40vh solid #301836;
+    }
+  }
+  
+  .wrapper {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    animation-name: skyAnimation;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 8s;
+    animation-direction: alternate;
+  }
+  
+  .cloud {
+    z-index: 3;
+    width: 15vmin;
+    height: 5vmin;
+    background: #e8f5ff;
+    background: linear-gradient(top, #c8c9ca 5%, #b7dbec 100%);
+    border-radius: 100px;
+    position: absolute;
+    margin: 120px auto 20px;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    opacity: 0;
+  
+  }
+  
+  .cloud:after,
+  .cloud:before {
+    content: '';
+    position: absolute;
+    background: #e8f5ff;
+    z-index: -1
+  }
+  
+  .cloud:after {
+    width: 4.5vmin;
+    height: 4.5vmin;
+    top: -2.5vmin;
+    left: 2.5vmin;
+    border-radius: 4vmin;
+  }
+  
+  .cloud:before {
+    width: 6.5vmin;
+    height: 6.5vmin;
+    top: -4vmin;
+    right: 2.5vmin;
+    border-radius: 4vmin;
+  }
+  
+  .cloud1 {
+    transform: scale(1.5);
+    top: 5vh;
+    left: 50vw;
+    animation-name: cloudMove;
+    animation-duration: 30s;
+    animation-delay: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  
+  .cloud2 {
+    transform: scale(2);
+    top: 15vh;
+    left: 10vw;
+    animation-name: cloudMove;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  
+  .cloud3 {
+    transform: scale(1.7);
+    top: 30vh;
+    left: 50vw;
+    animation-name: cloudMove;
+    animation-duration: 30s;
+    animation-delay: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  
+  .cloud4 {
+    transform: scale(3);
+    top: 3vh;
+    right: 5vw;
+    animation-name: cloudMove;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
 
-}
-
-@media (max-width: 576px)
-{
-
-
-}
+  
+  .mountain3 {
+    z-index: 2;
+    position: absolute;
+    right: 0;
+    bottom: 0px;
+    width: 0;
+    height: 0;
+    border-left: 20vw solid transparent;
+    border-right: 20vw solid transparent;
+    animation-name: lastMountainAnimation;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+  }
